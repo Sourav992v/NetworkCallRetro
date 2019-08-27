@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NetworkCallRetro</string>
+    <string name="userid">UserId</string>
+    <string name="id">id</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="postid">Post Id</string>
+    <string name="name">Name</string>
+    <string name="email">E-Mail</string>
+</resources>

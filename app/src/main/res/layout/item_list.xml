@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemListBinding">
+
+        <variable
+            name="post"
+            type="com.sourav.developer.networkcallretro.Post" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/userid"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/userIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/userId"
+                android:padding="8dp"
+                android:text="@{post.userId}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userId"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/id"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/idValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userIdValue"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/id"
+                android:padding="8dp"
+                android:text="@{post.id}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                tools:text="idValue" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/titleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idValue"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/title"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                tools:text="@{post.title}" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/body"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/bodyValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleValue"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/body"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                tools:text="@{post.text}" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
